@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Playground</string>
+    <string name="animations_playground">Animations Playground</string>
+    <string name="tap_here">View below: tap to slide down</string>
+    <string name="tap_to_animate">View above: tap to peek</string>
+
+    <string name="tap_above">Tapped on the view above</string>
+    <string name="tap_below">Tapped on the view below</string>
+    <string name="tap_none">Tapped outside the above/below views</string>
 </resources>
