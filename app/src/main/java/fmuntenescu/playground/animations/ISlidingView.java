@@ -8,7 +8,7 @@ import android.view.View;
  */
 public interface ISlidingView {
 
-    static final float TRANSLATION_FACTOR = 0.75f;
+    float TRANSLATION_FACTOR = 0.75f;
 
     /**
      * Slide a view up.
@@ -23,5 +23,6 @@ public interface ISlidingView {
     /**
      * @return type of the animation used in order to perform the sliding up and down
      */
+    @NonNull
     String getAnimationType();
 }
