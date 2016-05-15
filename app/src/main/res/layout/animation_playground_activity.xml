@@ -14,7 +14,7 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="fmuntenescu.playground.MainActivity">
 
-        <fmuntenescu.playground.animations.TapToSlidePropertyAnimationCodeView
+        <fmuntenescu.playground.animations.TapToSlidePropertyAnimationProgrammaticView
             android:layout_width="match_parent"
             android:layout_height="@dimen/tap_to_slide_view_height"
             android:background="@color/blue" />
@@ -25,7 +25,7 @@
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:background="@color/blue" />
 
-        <fmuntenescu.playground.animations.TapToSlideViewAnimationCodeView
+        <fmuntenescu.playground.animations.TapToSlideViewAnimationProgrammaticView
             android:layout_width="match_parent"
             android:layout_height="@dimen/tap_to_slide_view_height"
             android:layout_marginTop="@dimen/activity_vertical_margin"

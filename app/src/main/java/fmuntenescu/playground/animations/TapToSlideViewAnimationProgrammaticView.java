@@ -9,9 +9,9 @@ import android.view.animation.TranslateAnimation;
 /**
  * View that contains a component that animates using XML animations.
  */
-public class TapToSlideViewAnimationCodeView extends TapToSlideView {
+public class TapToSlideViewAnimationProgrammaticView extends TapToSlideView {
 
-    public TapToSlideViewAnimationCodeView(final Context context, final AttributeSet attrs) {
+    public TapToSlideViewAnimationProgrammaticView(final Context context, final AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -37,6 +37,6 @@ public class TapToSlideViewAnimationCodeView extends TapToSlideView {
 
     @Override
     public String getAnimationType() {
-        return "ViewAnimation - code";
+        return "ViewAnimation - programmatic";
     }
 }
