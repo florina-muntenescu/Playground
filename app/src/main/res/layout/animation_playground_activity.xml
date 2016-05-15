@@ -14,18 +14,18 @@
         android:paddingTop="@dimen/activity_vertical_margin"
         tools:context="fmuntenescu.playground.MainActivity">
 
-        <fmuntenescu.playground.animations.TapToSlideViewPropertyAnimatorView
+        <fmuntenescu.playground.animations.TapToSlidePropertyAnimationCodeView
             android:layout_width="match_parent"
             android:layout_height="@dimen/tap_to_slide_view_height"
             android:background="@color/blue" />
 
-        <fmuntenescu.playground.animations.TapToSlideXMLView
+        <fmuntenescu.playground.animations.TapToSlideViewAnimationXmlView
             android:layout_width="match_parent"
             android:layout_height="@dimen/tap_to_slide_view_height"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             android:background="@color/blue" />
 
-        <fmuntenescu.playground.animations.TapToSlideTranslateAnimationView
+        <fmuntenescu.playground.animations.TapToSlideViewAnimationCodeView
             android:layout_width="match_parent"
             android:layout_height="@dimen/tap_to_slide_view_height"
             android:layout_marginTop="@dimen/activity_vertical_margin"

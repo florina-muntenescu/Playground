@@ -13,9 +13,9 @@ import fmuntenescu.playground.R;
 /**
  * View that contains a component that animates using XML animations.
  */
-public class TapToSlideXMLView extends TapToSlideView {
+public class TapToSlideViewAnimationXmlView extends TapToSlideView {
 
-    public TapToSlideXMLView(final Context context, final AttributeSet attrs) {
+    public TapToSlideViewAnimationXmlView(final Context context, final AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -37,6 +37,6 @@ public class TapToSlideXMLView extends TapToSlideView {
 
     @Override
     public String getAnimationType() {
-        return "XML Translation";
+        return "ViewAnimation - XML";
     }
 }

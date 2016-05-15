@@ -8,9 +8,9 @@ import android.view.View;
 /**
  * View that contains a component that animates using XML animations.
  */
-public class TapToSlideViewPropertyAnimatorView extends TapToSlideView {
+public class TapToSlidePropertyAnimationCodeView extends TapToSlideView {
 
-    public TapToSlideViewPropertyAnimatorView(final Context context, final AttributeSet attrs) {
+    public TapToSlidePropertyAnimationCodeView(final Context context, final AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -33,6 +33,6 @@ public class TapToSlideViewPropertyAnimatorView extends TapToSlideView {
 
     @Override
     public String getAnimationType() {
-        return "ViewPropertyAnimator";
+        return "Property Animation - code";
     }
 }
