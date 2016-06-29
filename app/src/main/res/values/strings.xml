@@ -7,4 +7,9 @@
     <string name="tap_above">Tapped on the view above</string>
     <string name="tap_below">Tapped on the view below</string>
     <string name="tap_none">Tapped outside the above/below views</string>
+
+    <string name="vector_drawables_playground">Vector Drawables Playground</string>
+    <string name="vector_drawable">Vector Drawable</string>
+    <string name="png">PNG</string>
+    <string name="duration">Duration: %s</string>
 </resources>

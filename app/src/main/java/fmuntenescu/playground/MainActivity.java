@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import fmuntenescu.playground.animations.AnimationPlaygroundActivity;
+import fmuntenescu.playground.vectordrawables.VectorDrawablesPlaygroundActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,10 +16,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        View view = findViewById(R.id.animations_playground_button);
+        View viewAnimationPlaygroundButton = findViewById(R.id.animations_playground_button);
 
-        assert view != null;
-        view.setOnClickListener(v -> startActivity(AnimationPlaygroundActivity.class));
+        assert viewAnimationPlaygroundButton != null;
+        viewAnimationPlaygroundButton
+                .setOnClickListener(v -> startActivity(AnimationPlaygroundActivity.class));
+
+        View viewVectorDrawablesPlaygroundButton = findViewById(
+                R.id.vector_drawables_playground_button);
+
+        assert viewVectorDrawablesPlaygroundButton != null;
+        viewVectorDrawablesPlaygroundButton
+                .setOnClickListener(v -> startActivity(VectorDrawablesPlaygroundActivity.class));
     }
 
     private void startActivity(@NonNull final Class<?> cls) {

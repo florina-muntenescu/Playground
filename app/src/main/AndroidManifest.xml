@@ -18,6 +18,9 @@
         <activity
             android:name=".animations.AnimationPlaygroundActivity"
             android:label="@string/animations_playground" />
+        <activity
+            android:name=".vectordrawables.VectorDrawablesPlaygroundActivity"
+            android:label="@string/vector_drawables_playground" />
     </application>
 
 </manifest>
