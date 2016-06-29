@@ -34,9 +34,8 @@ public class VectorDrawablesPlaygroundActivity extends AppCompatActivity {
 
         RadioGroup group = (RadioGroup) findViewById(R.id.drawable_choice);
         assert group != null;
-        group.check(R.id.vector_drawable_button);
         group.setOnCheckedChangeListener((group1, checkedId) -> checkedChanged(checkedId));
-
+        group.check(R.id.vector_drawable_button);
     }
 
     private void updateDuration(final long miliseconds) {
