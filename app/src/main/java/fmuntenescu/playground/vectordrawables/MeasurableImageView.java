@@ -45,12 +45,6 @@ public class MeasurableImageView extends ImageView {
         notifyDraw(startTime, endTime);
     }
 
-    @Override
-    public void invalidate() {
-        Log.d("flo", "invalidate");
-        super.invalidate();
-    }
-
     private void notifyDraw(final long startTime, final long endTime) {
         long duration = endTime - startTime;
 

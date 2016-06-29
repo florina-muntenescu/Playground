@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/draw_duration_text"
-        android:src="@drawable/placeholder" />
+        tools:src="@drawable/placeholder" />
 
     <RadioGroup
         android:id="@+id/drawable_choice"
