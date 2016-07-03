@@ -48,7 +48,7 @@ public class MeasurableImageView extends ImageView {
     private void notifyDraw(final long startTime, final long endTime) {
         long duration = endTime - startTime;
 
-        Log.d("flo", "draw took " + duration);
+        Log.d("playground", "rendering took " + duration);
 
         if (mDrawListener != null) {
             mDrawListener.viewDrawn(duration);

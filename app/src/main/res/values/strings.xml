@@ -11,5 +11,5 @@
     <string name="vector_drawables_playground">Vector Drawables Playground</string>
     <string name="vector_drawable">Vector Drawable</string>
     <string name="png">PNG</string>
-    <string name="duration">Duration: %s</string>
+    <string name="duration">Rendering duration: %s</string>
 </resources>
