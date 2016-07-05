@@ -16,17 +16,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        View viewAnimationPlaygroundButton = findViewById(R.id.animations_playground_button);
+        View startAnimationsPlayground = findViewById(R.id.animations_playground_button);
 
-        assert viewAnimationPlaygroundButton != null;
-        viewAnimationPlaygroundButton
+        assert startAnimationsPlayground != null;
+        startAnimationsPlayground
                 .setOnClickListener(v -> startActivity(AnimationPlaygroundActivity.class));
 
-        View viewVectorDrawablesPlaygroundButton = findViewById(
+        View startVectorDrawablesPlayground = findViewById(
                 R.id.vector_drawables_playground_button);
 
-        assert viewVectorDrawablesPlaygroundButton != null;
-        viewVectorDrawablesPlaygroundButton
+        assert startVectorDrawablesPlayground != null;
+        startVectorDrawablesPlayground
                 .setOnClickListener(v -> startActivity(VectorDrawablesPlaygroundActivity.class));
     }
 

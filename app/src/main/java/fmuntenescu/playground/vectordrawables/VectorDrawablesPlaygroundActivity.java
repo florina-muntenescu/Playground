@@ -30,11 +30,11 @@ public class VectorDrawablesPlaygroundActivity extends AppCompatActivity {
                 R.id.measurable_image);
 
         assert mMeasurableImageView != null;
-        mMeasurableImageView.setDrawListener(this::updateDuration);
+        mMeasurableImageView.setViewRedrawnListener(this::updateDuration);
 
         RadioGroup group = (RadioGroup) findViewById(R.id.drawable_choice);
         assert group != null;
-        group.setOnCheckedChangeListener((group1, checkedId) -> checkedChanged(checkedId));
+        group.setOnCheckedChangeListener((group1, checkedId) -> onImageTypeChanged(checkedId));
         group.check(R.id.vector_drawable_button);
     }
 
@@ -44,7 +44,7 @@ public class VectorDrawablesPlaygroundActivity extends AppCompatActivity {
         mDurationText.setText(getString(R.string.duration, miliseconds));
     }
 
-    private void checkedChanged(@IdRes final int checkedId) {
+    private void onImageTypeChanged(@IdRes final int checkedId) {
         switch (checkedId) {
             case R.id.vector_drawable_button:
                 vectorDrawableSelected();

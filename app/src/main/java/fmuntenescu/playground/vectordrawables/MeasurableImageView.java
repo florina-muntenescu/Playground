@@ -14,7 +14,7 @@ import android.widget.ImageView;
 public class MeasurableImageView extends ImageView {
 
     @Nullable
-    private DrawListener mDrawListener;
+    private ViewRedrawnListener mViewRedrawnListener;
 
     public MeasurableImageView(final Context context) {
         super(context);
@@ -29,10 +29,10 @@ public class MeasurableImageView extends ImageView {
         super(context, attrs, defStyleAttr);
     }
 
-    public void setDrawListener(@NonNull final DrawListener drawListener) {
-        assert drawListener != null;
+    public void setViewRedrawnListener(@NonNull final ViewRedrawnListener viewRedrawnListener) {
+        assert viewRedrawnListener != null;
 
-        mDrawListener = drawListener;
+        mViewRedrawnListener = viewRedrawnListener;
     }
 
     @Override
@@ -50,8 +50,8 @@ public class MeasurableImageView extends ImageView {
 
         Log.d("playground", "rendering took " + duration);
 
-        if (mDrawListener != null) {
-            mDrawListener.viewDrawn(duration);
+        if (mViewRedrawnListener != null) {
+            mViewRedrawnListener.onRedraw(duration);
         }
     }
 }
